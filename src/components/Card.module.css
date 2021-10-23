@@ -1,0 +1,87 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 30vh;
+    color: #ffffff;
+}
+
+.card + .card {
+    border-left: solid 2px #00000042;
+}
+
+.card > img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.primary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5vh 15vh;
+    width: 20rem;
+    padding: 0 0.5rem;
+}
+
+.primary > span {
+    margin-top: 0.15rem;
+    grid-column: 1 /span 2;
+}
+
+.primary > img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.name {
+    background-color: #00000098;
+    padding: 0.15rem 0.80rem;
+    border-radius: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.temp + .temp {
+    margin-left: 1rem;
+}
+
+.temps {
+    display: flex;
+}
+
+.button {
+    border: solid 2px transparent;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.25s, color 0.25s;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin-left: 0.5rem;
+    margin-right: -0.5rem;
+}
+
+.button:hover {
+    background-color: #ffffff48;
+    color: #F8485E
+}
+
+.button:focus {
+    outline: none;
+}

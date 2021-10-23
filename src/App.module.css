@@ -1,0 +1,41 @@
+.app {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bkg {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    background-color: #37399641;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh 5vw;
+    top: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 60vh;
+}
+
+.citiesContainer {
+    display: flex;
+    height: 30vh;
+    background-color: #7e75ad67;
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+}
+
+.app,
+.container {
+    background-image: url("./assets/2264.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-radius: 18px;
+}
